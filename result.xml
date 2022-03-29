@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="2" tests="16" time="0.140" timestamp="2022-03-29T17:01:14.712110" hostname="DESKTOP-MHE75P8"><testcase classname="test_Calculator" name="test_add[3-2-5]" time="0.001" /><testcase classname="test_Calculator" name="test_add[10-12-15]" time="0.001"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_Calculator" name="test_add[2-5-8]" time="0.001"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_Calculator" name="test_add[7-8-15]" time="0.001" /><testcase classname="test_Calculator" name="test_sub[7-2-5]" time="0.001" /><testcase classname="test_Calculator" name="test_sub[12-10-2]" time="0.001" /><testcase classname="test_Calculator" name="test_sub[12-5-7]" time="0.001" /><testcase classname="test_Calculator" name="test_sub[8-6-2]" time="0.001" /><testcase classname="test_Calculator" name="test_mul[1-5-5]" time="0.001" /><testcase classname="test_Calculator" name="test_mul[10-12-120]" time="0.001" /><testcase classname="test_Calculator" name="test_mul[2-5-10]" time="0.001" /><testcase classname="test_Calculator" name="test_mul[7-8-56]" time="0.001" /><testcase classname="test_Calculator" name="test_div[4-2-2]" time="0.001" /><testcase classname="test_Calculator" name="test_div[100-4-25]" time="0.001" /><testcase classname="test_Calculator" name="test_div[2-5-8]" time="0.001"><failure message="assert 8 == 0.4">a = 2, b = 5, c = 8
+
+    @pytest.mark.parametrize("a,b,c", [(4,2,2),(100,4,25),(2,5,8),(7,8,15)])
+    def test_div(a,b,c):
+        result = Calculator.div(a, b)
+&gt;       assert c==result
+E       assert 8 == 0.4
+
+test_Calculator.py:23: AssertionError</failure></testcase><testcase classname="test_Calculator" name="test_div[7-8-15]" time="0.001"><failure message="assert 15 == 0.875">a = 7, b = 8, c = 15
+
+    @pytest.mark.parametrize("a,b,c", [(4,2,2),(100,4,25),(2,5,8),(7,8,15)])
+    def test_div(a,b,c):
+        result = Calculator.div(a, b)
+&gt;       assert c==result
+E       assert 15 == 0.875
+
+test_Calculator.py:23: AssertionError</failure></testcase></testsuite></testsuites>
